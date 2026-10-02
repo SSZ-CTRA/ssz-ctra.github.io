@@ -2,18 +2,20 @@ name: Deploy
 on:
   push:
     branches:
-      master
+      - master
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          persist-credentials: true   # peaceiris 推送需要用到凭证
 
-      # https://github.com/actions/cache/blob/master/examples.md#ruby---bundler
       - name: "Cache: Set up bundler cache"
         uses: actions/cache@v4
         with:
@@ -21,23 +23,28 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+
       - name: Use Node.js
-        uses: actions/setup-node@v1
-        with: { node-version: '22.x' }
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
 
       - name: Use Ruby
         uses: ruby/setup-ruby@v1
-        with: { ruby-version: '2.7' }
+        with:
+          ruby-version: '2.7'
 
       - name: Setup dependencies
         run: |
           npm i
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-      - run: npm run build && bundle exec jekyll build
+
+      - name: Build
+        run: npm run build && bundle exec jekyll build
 
       - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
