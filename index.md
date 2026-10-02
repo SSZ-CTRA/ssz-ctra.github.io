@@ -5,7 +5,7 @@ id: index
 
 # CTRA@DGSSZ
 
-东莞市第十三高级中学计算技术协会是由学生自行创立并运行的计算机技术研究社群，由Ye, Yougui老师指导。
+东莞市第十三高级中学计算技术协会是由学生自行创立并运营的计算机技术研究社群，由Ye Yougui老师指导。
 
 同学们的兴趣非常广泛，从架子鼓到吉他、从信息学竞赛到程序设计、从各类传感小模块到各类创客比赛，再从网络安全到大模型； 如今，越来越多的青少年科技创新大赛中都能看到各位CTRAer们忙碌的身影。
 
@@ -26,7 +26,7 @@ id: index
 
 | | |
 | --------------------------------------------------------- | ------------------------------------------------------------ | 
-| <img src="assets/profile/ye-yougui.jpg" class="profile-image" alt="profile-image"  />  | **Ye, Yougui**(Advisor) <br />华南某211毕业的、HAM、摩托去西藏，同时也是计协最有影响力的任务（bushi<br />- Blog: [https://XG2475.github.io/](//XG2475.github.io/)<br />- Github: [XG2475](//github.com/XG2475) |
+| <img src="assets/profile/ye-yougui.jpg" class="profile-image" alt="profile-image"  />  | **Ye, Yougui**(Advisor) <br />计协最有影响力的人物（bushi<br />- Blog: [https://XG2475.github.io/](//XG2475.github.io/)<br />- Github: [XG2475](//github.com/XG2475) |
 | <img src="assets/profile/zheng-hailin.jpg" class="profile-image" alt="profile-image"  />  | **Zheng, Hailin**(Founder) <br />Security Researcher in Binary Security and AI Security<br />- Blog: [https://blog.zer0ptr.icu/](//blog.zer0ptr.icu/)<br />- Github: [zer0ptr](//github.com/zer0ptr) <br />- Class of 2024 |
 | <img src="assets/profile/huang-qingyi.jpg" class="profile-image" alt="profile-image"  />  | **Huang, Qingyi**<br /> A java baby.<br />- Blog: [https://colorfulbird.fun/](//colorfulbird.fun/)<br />- Github: [colorfulbird3](//github.com/colorfulbird3) <br />- Class of 2024|
 | <img src="assets/profile/li-runxuan.png" class="profile-image" alt="profile-image"  />  | **Li, Runxuan**<br /> 无限进步<br />- Github: [RxuanLi](//github.com/RxuanLi) <br />- Class of 2024|
